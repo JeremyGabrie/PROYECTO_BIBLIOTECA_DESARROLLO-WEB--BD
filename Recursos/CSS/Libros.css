@@ -1,0 +1,104 @@
+.Contenedor__Libro,.Contenido__Libro{
+    display: grid;
+}
+.Contenedor__Libro{
+    margin:50;
+    height: 800px;
+    grid-template-rows: 8% 50% 20%;
+    row-gap: 20px;
+}
+.Contenido__Libro{
+    margin:10 40 40 40 ;
+    grid-template-columns: 20% auto;
+    height: 300px;
+    column-gap: 20px;
+}
+.Contenedor__Libro h4{
+    background-color: orange;
+    font-size: 25px;
+    color: white;
+    margin:0;
+    padding: 10px;
+    text-align: center;
+}
+.Libro__Img__1,.Libro__Img__2,
+.Libro__Img__3,.Libro__Img__4,
+.Libro__Img__5,.Libro__Img__6,
+.Libro__Img__7,.Libro__Img__8,
+.Libro__Img__9,.Libro__Img__10{
+    border: 3px solid;
+    border-color: orange;
+    background-size: cover;
+    width: 216px;
+    height: 320px;
+    margin: 0px;
+}
+.Libro__Img__1{
+    background-image: url("../imgLibros/DL1.jpg");
+}
+.Libro__Img__2{
+    background-image: url("../imgLibros/DL2.jpg");
+}
+.Libro__Img__3{
+    background-image: url("../imgLibros/DA1.jpg");
+}
+.Libro__Img__4{
+    background-image: url("../imgLibros/DA2.jpg");
+}
+.Libro__Img__5{
+    background-image: url("../imgLibros/DT1.jpg");
+}
+.Libro__Img__6{
+    background-image: url("../imgLibros/DT2.jpg");
+}
+.Libro__Img__7{
+    background-image: url("../imgLibros/A3T.JPG");
+}
+.Libro__Img__8{
+    background-image: url("../imgLibros/T4A.JPG");
+}
+.Libro__Img__9{
+    background-image: url("../imgLibros/Ponencia.JPG");
+}
+.Libro__Img__10{
+    background-image: url("../imgLibros/Revista.JPG");
+}
+.Libro__Datos p{
+   margin: 0;
+   font-size: 20px;
+   text-align: justify;
+}
+.Libro__Datos ul{
+    margin-top: 20px;
+}
+.Libro__Datos li{
+    font-size: 20px;
+    color: orange;
+}
+.Libro__Datos a{
+    font-size: 25px;
+    background-color: orange;
+    border-radius: 10%;
+    padding: 8px;
+}
+.Libro__Datos span{
+    font-size: 20px;
+    color: black;
+}
+.Libro__Datos a:hover{
+    background-color: black;
+}
+form input{
+    border: none;
+    background-color: orange;
+    padding: 15px;
+    border-radius: 10px;
+    width: 140px;
+    color: white;
+    font-size: 20px;
+    cursor:Pointer;
+    margin-right: 30px;
+}
+form{
+    text-align: center;
+}

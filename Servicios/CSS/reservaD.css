@@ -1,0 +1,145 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    color:black;
+}
+
+.contenedor{
+    width:100%;
+    max-width: 1200px;
+    margin: 20px auto 100px auto;
+    font-size: 18px;
+    font-family:Helvetica;
+    display: grid;
+    row-gap: 20px;
+    column-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, auto);
+
+    grid-template-areas: "imagenes imagenes imagenes imagenes"
+                         "formas titulo titulo vacio"
+                         "formas formulario formulario formulario"
+                         "vacio1 reservar reservar vacio2";
+}
+
+.contenedor>div,
+.contenedor .imagenes,
+.contenedor .formas,
+.contenedor .formulario,
+.contenedor .reservar,
+.contenedor .vacio,
+.contenedor .vacio1,
+.contenedor .vacio2{
+    background: white;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.contenedor .imagenes{
+    background: rgb(245, 147, 28);
+    color: white;
+    grid-area: imagenes;
+}
+.contenedor .titulo{
+    background: rgb(245, 147, 28);
+    color: white;
+    text-align: left;
+    grid-area: titulo;
+}
+.contenedor .formas{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    grid-area: formas;
+}
+.contenedor .formas h2{
+    font-family: "Arial Rounded MT Bold";
+    font-size: 30px;
+}
+
+.contenedor .formas p{
+    font-size: 18px;
+    margin-top: 50px;
+}
+a{text-decoration: none;}
+.contenedor .formas li{
+    list-style: none;
+    font-size: 25px;
+    color:black
+}
+.contenedor .formas li:hover{
+    color: #d85b21;
+    cursor:pointer;
+}
+.contenedor .formas .estela{
+    width: 100px;
+    height: 200px;
+    margin-top: 40px;
+}
+.contenedor .formulario{
+    grid-area: formulario;
+}
+.contenedor .formulario .direccion,
+.contenedor .formulario .fecha,
+.contenedor .formulario .numero,
+.contenedor .formulario .referencia,
+.contenedor .formulario .persona,
+.contenedor .formulario .distrito{
+        display: block;
+        width: 600px;
+        height: 25px;
+        margin: 5px 22px 5px 0px;
+        font-size: 15px;
+        outline: none;
+        border-radius: 10px;
+        background: transparent;
+	    font-family: 'Krub', sans-serif;
+        color: black;
+}
+.contenedor .formulario .referencia{
+    width: 600px;
+    height: 150px;
+}
+.contenedor .reservar{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    grid-area: reservar;
+}
+.contenedor .reservar .btnreserva{
+    width: 200px;
+    height: 40px;
+    border-radius: 40px;
+    background-color:#d85b21;
+    color:aliceblue ;
+    border: none;
+    border-bottom: 4px solid #ab400e;
+    font-size: 16px;
+
+}
+.contenedor .reservar .btnreserva:active{
+    background-color: black;
+    border-bottom: 4px solid gray;
+    width:195px;
+    height: 35px;
+}
+
+.contenedor .reservar .btnreserva:hover{
+    cursor:pointer;
+}
+.contenedor .vacio{
+    background-color: transparent;
+    grid-area: vacio;
+}
+.contenedor .vacio1{
+    background-color: transparent;
+    grid-area: vacio1;
+}
+.contenedor .vacio2{
+    background-color: transparent;
+    grid-area: vacio2;
+}

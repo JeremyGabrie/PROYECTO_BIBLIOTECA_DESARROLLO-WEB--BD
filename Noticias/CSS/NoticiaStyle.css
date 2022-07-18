@@ -1,0 +1,176 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    color:black;
+}
+
+.contenedor{
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto 100px auto;
+    font-size: 18px;
+    font-family: Arial;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(8, auto);
+    row-gap: 20px;
+    column-gap: 10px;
+
+    grid-template-areas: "imagenes imagenes imagenes imagenes"
+                         "subtitulo1 subtitulo1 subtitulo1 subtitulo1"
+                         "noti1 noti2 noti3 noti4"
+                         "subtitulo2 subtitulo2 subtitulo2 subtitulo2"
+                         "imgEvento imgEvento evento1 evento1"
+                         "imgEvento imgEvento evento2 evento2"
+                         "imgEvento imgEvento evento3 evento3"
+                         "imgEvento imgEvento evento4 evento4";
+}
+
+.contenedor>div,
+.contenedor .imagenes,
+.contenedor .subtitulo1,
+.contenedor .noti1,
+.contenedor .noti2,
+.contenedor .noti3,
+.contenedor .noti4,
+.contenedor .subtitulo2,
+.contenedor .imgEvento,
+.contenedor .evento1,
+.contenedor .evento2,
+.contenedor .evento3,
+.contenedor .evento4{
+    background: white;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.contenedor .imagenes{
+    background: rgb(245, 147, 28);
+    color: white;
+    grid-area: imagenes;
+}
+.contenedor .imagenes .logo{
+    width: 100%;
+    height: 600px;
+}
+
+.contenedor .noti1,
+.contenedor .noti2,
+.contenedor .noti3,
+.contenedor .noti4{
+    text-align: justify;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+.contenedor .noti1 .memoria,
+.contenedor .noti2 .cupbs,
+.contenedor .noti3 .cuento,
+.contenedor .noti4 .datos{
+    width: 220px;
+}
+.contenedor .noti1 div ,
+.contenedor .noti2 div ,
+.contenedor .noti3 div ,
+.contenedor .noti4 div {
+    text-align: center;
+}
+
+.contenedor .subtitulo1{
+    background: rgb(245, 147, 28);
+    color: white;
+    grid-area: subtitulo1;
+}
+
+.contenedor .noti1{
+    grid-area: noti1;
+}
+
+.contenedor .noti2{
+    grid-area: noti2;
+}
+
+.contenedor .noti3{
+    grid-area: noti3;
+}
+
+.contenedor .noti4{
+    grid-area: noti4;
+}
+
+.contenedor .subtitulo2{
+    background: rgb(245, 147, 28);
+    color: white;
+    grid-area: subtitulo2;
+}
+
+.contenedor .imgEvento{
+    grid-area: imgEvento;
+}
+
+.contenedor .imgEvento .capa{
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor .evento1,
+.contenedor .evento2,
+.contenedor .evento3,
+.contenedor .evento4{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+.contenedor .evento1 .redal,
+.contenedor .evento2 .unesco,
+.contenedor .evento3 .econbiz,
+.contenedor .evento4 .redib{
+    width: 35px;
+    height: 35px;
+    margin: 0px 40px 0px 0px;
+    border-radius: 100%;
+}
+
+.contenedor .evento1{
+    grid-area: evento1;
+}
+
+.contenedor .evento2{
+    grid-area: evento2;
+}
+
+.contenedor .evento3{
+    grid-area: evento3;
+}
+
+.contenedor .evento4{
+    grid-area: evento4;
+}
+
+.contenedor .evento1 a,
+.contenedor .evento2 a,
+.contenedor .evento3 a,
+.contenedor .evento4 a,
+.contenedor .noti1 a,
+.contenedor .noti2 a,
+.contenedor .noti3 a,
+.contenedor .noti4 a{
+    text-decoration: none;
+    color: black;
+}
+
+.contenedor .evento1 a:hover,
+.contenedor .evento2 a:hover,
+.contenedor .evento3 a:hover,
+.contenedor .evento4 a:hover,
+.contenedor .noti1 a:hover,
+.contenedor .noti2 a:hover,
+.contenedor .noti3 a:hover,
+.contenedor .noti4 a:hover{
+    color: darkorange;
+}

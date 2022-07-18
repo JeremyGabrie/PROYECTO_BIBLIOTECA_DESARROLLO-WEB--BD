@@ -1,0 +1,247 @@
+
+*{                                                          /*Usamos el selector universal para que todo */
+    margin:0;                                               /*tenga un margen externo de 0 pixeles*/
+    padding:0;                                              /*tenga un margen interno de 0 pixeles*/
+}
+
+body{
+    color:black;                                          /*Determinar un color de letra a todo el body */
+}
+
+/*CUERPO DE LA PÁGINA*/
+.contenedor{                                                /*Declaramos la division contenedor*/
+    margin: 20px 0px 0px 70px;                              /*Determinamos los margenes externo del contenedor general*/
+    display: grid;                                          /*Control de estrucutra como cuadricula con la propiedad grid*/
+    grid-template-columns: repeat(3, 1fr);                  /*Determinamos la cantidad de columnas que tendra nuestro grid y usamos la funcion repeat para agiliar el codigo*/
+    grid-template-rows: repeat(11, auto);                   /*Determinamos la cantidad de columnas que tendra nuestro grid y usamos la funcion repeat para agiliar el codigo*/
+    row-gap: 20px;                                          /*Espaciado entre las filas*/
+    column-gap: 30px;                                       /*Espaciado entre las columnas*/
+
+    grid-template-areas: "imagenes imagenes imagenes"       /*asiganamos cada clase en una zona especifica dentrod enuestro cuadriculado*/
+                         "hola hola opciones"               /*asiganamos cada clase en una zona especifica dentrod enuestro cuadriculado*/
+                         "mensajeI mensajeI opciones"       /*asiganamos cada clase en una zona especifica dentrod enuestro cuadriculado*/
+                         "mensajeA mensajeA opciones"       /*asiganamos cada clase en una zona especifica dentrod enuestro cuadriculado*/
+                         "titulo titulo titulo"             /*asiganamos cada clase en una zona especifica dentrod enuestro cuadriculado*/
+                         "libros articulos tesis"           /*asiganamos cada clase en una zona especifica dentrod enuestro cuadriculado*/
+                         "libro1 arti1 tesis1"              /*asiganamos cada clase en una zona especifica dentrod enuestro cuadriculado*/
+                         "libro2 arti2 tesis2"              /*asiganamos cada clase en una zona especifica dentrod enuestro cuadriculado*/
+                         "titulo2 titulo2 titulo2"          /*asiganamos cada clase en una zona especifica dentrod enuestro cuadriculado*/
+                         "logo descripcion descripcion"     /*asiganamos cada clase en una zona especifica dentrod enuestro cuadriculado*/
+                         "logo siguiente siguiente";        /*asiganamos cada clase en una zona especifica dentrod enuestro cuadriculado*/
+}
+
+.contenedor>div,                    /*llamamamos especificamente a todos los div que estan dentro de contenedor*/
+.contenedor .imagen,                /*llamamamos a la clase imagen que esta dentro de la clase contenedor*/
+.contenedor .hola,                  /*llamamamos a la clase hola que esta dentro de la clase contenedor*/
+.contenedor .vacio,                 /*llamamamos a la clase vacio que esta dentro de la clase contenedor*/
+.contenedor .opciones,              /*llamamamos a la clase opciones que esta dentro de la clase contenedor*/
+.contenedor .mensajeA,              /*llamamamos a la clase mensajeA que esta dentro de la clase contenedor*/
+.contenedor .mensajeI,              /*llamamamos a la clase mensajeI que esta dentro de la clase contenedor*/
+.contenedor .titulo,                /*llamamamos a la clase titulo que esta dentro de la clase contenedor*/
+.contenedor .libros,                /*llamamamos a la clase libros que esta dentro de la clase contenedor*/
+.contenedor .articulos,             /*llamamamos a la clase articulos que esta dentro de la clase contenedor*/
+.contenedor .tesis,                 /*llamamamos a la clase tesis  que esta dentro de la clase contenedor*/
+.contenedor .libro1,                /*llamamamos a la clase libro1 que esta dentro de la clase contenedor*/
+.contenedor .libro2,                /*llamamamos a la clase libro2 que esta dentro de la clase contenedor*/
+.contenedor .arti1,                 /*llamamamos a la clase arti1  que esta dentro de la clase contenedor*/
+.contenedor .arti2,                 /*llamamamos a la calse arti2  que esta dentro de la clase contenedor*/
+.contenedor .tesis1,                /*llamamamos a la clase tesis1 que esta dentro de la clase contenedor*/
+.contenedor .tesis2,                /*llamamamos a la clase tesis2 que esta dentro de la clase contenedor*/
+.contenedor .logo,                  /*llamamamos a la clase logo que esta dentro de la clase contenedor*/
+.contenedor .descripcion,           /*llamamamos a la clase descripcion que esta dentro de la clase contenedor*/
+.contenedor .siguiente{ 
+    background: white;            /*colocamos un fondo interno de color blanco*/
+    padding: 10px;                  /*espaciado interno*/
+    border-radius: 4px;             /*forma del borde de los contenedores*/
+}
+
+.contenedor .imagenes{              
+    background: orange;           /*cambiamos el color de fondo de la clase indicada*/
+    color: white;                 /*cambiamos el color de la letra*/
+    grid-area: imagenes;            /*le indicamos a la division a que zona de la cuadricula pertenecera*/
+}
+.contenedor .hola{                  
+    align-items: center;            /*que todo los items del contenedor se alinee al centro*/
+    justify-content: center;        /*justificar la posicion del contenido al centro del contenedor*/
+    font-size: 30px;                /*cambiar el tamano de letra al contenido*/
+    color: #ab400e;               /*cambiamos el color de la letra*/
+    display: flex;                  /*el control de estructa del contenido sea flexible y pueda moverse comodamente como deseemos*/
+    grid-area: hola;                /*le indicamos a la division a que zona de la cuadricula pertenecera*/
+}
+.contenedor .mensajeI{
+    text-align: center;             /*que todo el texto que pertenece al contenedor se alinee al centro*/
+    align-items: center;            /*que todo los items del contenedor se alinee al centro*/
+    justify-content: center;        /*justificar la posicion del contenido al centro del contenedor*/
+    color: #12203e;               /*cambiamos el color de la letra*/
+    font-size: 20px;                /*cambiar el tamano de letra al contenido*/
+    display: flex;                  /*el control de estructa del contenido sea flexible y pueda moverse comodamente como deseemos*/
+    height: 100px;                  /*modificamos la altura del contenedor*/
+    grid-area: mensajeI;            /*le indicamos a la division a que zona de la cuadricula pertenecera*/
+}
+.contenedor .mensajeA{
+    text-align: center;             /*que todo el texto que pertenece al contenedor se alinee al centro*/
+    align-items: center;            /*que todo los items del contenedor se alinee al centro*/
+    justify-content: center;        /*justificar la posicion del contenido al centro del contenedor*/
+    display: block;                 /*el control de estructa del contenido tratado como un bloque y podamos manejarlo verticalmente*/
+    font-family: "Century Gothic";  /*cambiar el tipo de letra al contenido*/
+    font-size: 20px;                /*cambiar el tamano de letra al contenido*/
+    grid-area: mensajeA;            /*le indicamos a la division a que zona de la cuadricula pertenecera*/
+}
+.contenedor .mensajeA .imgMensaj{
+    margin-top: 50px;               /*hacemos que tenga un espacio de margen superior*/
+    width: 700px;                   /*modificamos el ancho de la imagen perteneciente al contenedor indicado*/
+    height: 350px;                  /*modificamos el alto de la imagen perteneciente al contenedor indicado*/
+}
+.contenedor .opciones{
+    text-align: center;             /*que todo el texto que pertenece al contenedor se alinee al centro*/
+    display: block;                 /*el control de estructa del contenido tratado como un bloque y podamos manejarlo verticalmente*/
+    align-items: center;            /*que todo los items del contenedor se alinee al centro*/
+    justify-content: center;        /*justificar la posicion del contenido al centro del contenedor*/
+    font-family: "Century Gothic";  /*cambiar el tipo de letra al contenido*/
+    font-size: 18px;                /*cambiar el tamano de letra al contenido*/
+    color: #974b0c;               /*cambiamos el color de la letra*/
+    grid-area: opciones;            /*le indicamos a la division a que zona de la cuadricula pertenecera*/
+}
+.contenedor .opciones img{
+    width: 160px;                   /*modificamos el ancho de la imagen perteneciente al contenedor indicado*/
+    height:140px;                   /*modificamos el alto de la imagen perteneciente al contenedor indicado*/
+}
+.contenedor .opciones h4{
+    margin-bottom: 10px;            /*hacemos que tenga un espacio de margen inferior unicamente los H4 de la clase opciones*/
+}
+.contenedor .titulo{
+    text-align: center;             /*que todo el texto que pertenece al contenedor se alinee al centro*/
+    background: orange;           /*Cmabiamos el color de fondo de la clase titulo*/
+    color: white;                 /*cambiamos el color de la letra*/
+    grid-area: titulo;              /*le indicamos a la division a que zona de la cuadricula pertenecera*/
+}
+.contenedor .libros{
+    background: darkorange;       /*Cambiamos el color de fondo de la clase libros*/
+    color: white;                 /*cambiamos el color de la letra*/
+    text-align: center;             /*que todo el texto que pertenece al contenedor se alinee al centro*/
+    grid-area: libros;              /*le indicamos a la division a que zona de la cuadricula pertenecera*/
+}
+.contenedor .articulos{
+    background: darkorange;       /*Cambiamos el color de fondo de la clase articulos*/
+    color: white;                 /*cambiamos el color de la letra*/
+    text-align: center;             /*que todo el texto que pertenece al contenedor se alinee al centro*/
+    grid-area: articulos;           /*le indicamos a la division a que zona de la cuadricula pertenecera*/
+}
+.contenedor .tesis{
+    background: darkorange;        /*Cambiamos el color de fondo de la clase tesis*/
+    color: white;                 /*cambiamos el color de la letra*/
+    text-align: center;             /*que todo el texto que pertenece al contenedor se alinee al centro*/
+    grid-area: tesis;               /*le indicamos a la division a que zona de la cuadricula pertenecera*/
+}
+
+.contenedor .material{
+    width: 90px;                      /*modificamos el ancho de la imagen llamado por el nombre de su clase*/
+    height: 120px;                    /*modificamos el alto de la imagen llamado por el nombre de su clase*/
+    border-bottom: 5px solid gray;  /*cambiamos la contextura y color que tendra el borde inferior de la imagen*/
+    border-right: 5px solid gray;   /*cambiamos la contextura y color que tendra el borde de la derecha de la imagen*/
+    margin-right: 20px;               /*hacemos que tenga un espacio de margen inferior la clase correspondiente*/
+}
+
+.contenedor .libro1,
+.contenedor .libro2,
+.contenedor .arti1,
+.contenedor .arti2,
+.contenedor .tesis1,
+.contenedor .tesis2{
+    text-align: center;             /*que todo el texto que pertenece al contenedor se alinee al centro*/
+    display: flex;                  /*el control de estructa del contenido sea flexible y pueda moverse comodamente como deseemos*/
+    align-items: center;            /*que todo los items del contenedor se alinee al centro*/
+    justify-content: center;        /*justificar la posicion del contenido al centro del contenedor*/
+    font-family: "Century Gothic";  /*cambiar el tipo de letra al contenido*/
+    font-size: 15px;                /*cambiar el tamano de letra al contenido*/
+}
+.contenedor .libro1{
+    grid-area: libro1;              /*le indicamos a la division a que zona de la cuadricula pertenecera*/
+}
+.contenedor .libro2{
+    grid-area: libro2;               /*le indicamos a la division a que zona de la cuadricula pertenecera*/
+}
+.contenedor .arti1{
+    grid-area: arti1;               /*le indicamos a la division a que zona de la cuadricula pertenecera*/
+}
+.contenedor .arti2{
+    grid-area: arti2;                /*le indicamos a la division a que zona de la cuadricula pertenecera*/
+}
+.contenedor .tesis1{
+    grid-area: tesis1;              /*le indicamos a la division a que zona de la cuadricula pertenecera*/
+}
+.contenedor .tesis2{
+    grid-area: tesis2;              /*le indicamos a la division a que zona de la cuadricula pertenecera*/
+}
+.contenedor .titulo2{
+    text-align: center;                 /*que todo el texto que pertenece al contenedor se alinee al centro*/
+    background: orange;               /*Cambiamos el color de fondo de la clase titulo2*/
+    color: white;                     /*cambiamos el color de la letra*/
+    grid-area: titulo2;                 /*le indicamos a la division a que zona de la cuadricula pertenecera*/
+}
+.contenedor .logo{
+    text-align: center;                 /*que todo el texto que pertenece al contenedor se alinee al centro*/
+    grid-area: logo;                    /*le indicamos a la division a que zona de la cuadricula pertenecera*/
+}
+.contenedor .logo img{
+    width: 200px;                       /*modificamos el ancho de la imagen de la clase indicada*/
+    height: 210px;                      /*modificamos el alto de la imagen de la clase indicada*/
+    border-bottom: 10px solid gray;   /*cambiamos la contextura y color que tendra el borde inferior de la imagen*/
+    border-right: 10px solid gray;    /*cambiamos la contextura y color que tendra el borde derecho de la imagen*/
+    border-radius: 100%;                /*cambiamos el borde de la imagen haciendolo mas circular*/
+}
+.contenedor .descripcion{
+    text-align: center;                 /*que todo el texto que pertenece al contenedor se alinee al centro*/
+    display: flex;                      /*el control de estructa del contenido sea flexible y pueda moverse comodamente como deseemos*/
+    align-items: center;                /*que todo los items del contenedor se alinee al centro*/
+    justify-content: center;            /*justificar la posicion del contenido al centro del contenedor*/
+    font-family: "Century Gothic";      /*cambiar el tipo de letra al contenido*/
+    font-size: 22px;                    /*cambiar el tamano de letra al contenido*/
+    grid-area: descripcion;             /*le indicamos a la division a que zona de la cuadricula pertenecera*/
+}
+.contenedor .siguiente{
+    text-align: center;                 /*que todo el texto que pertenece al contenedor se alinee al centro*/
+    align-items: center;                /*que todo los items del contenedor se alinee al centro*/
+    justify-content: center;            /*justificar la posicion del contenido al centro del contenedor*/
+    display: flex;                      /*el control de estructa del contenido sea flexible y pueda moverse comodamente como deseemos*/
+    grid-area: siguiente;               /*le indicamos a la division a que zona de la cuadricula pertenecera*/
+}
+
+.contenedor .siguiente .btnsiguiente{
+    width: 200px;                             /*modificamos el ancho del boton*/
+    height: 40px;                             /*modificamos el ancho del boton*/
+    border-radius: 40px;                      /*cambiamos el borde del boton haciendolo mas circular*/
+    background-color:#d85b21;               /*Cambiamos el color de fondo del boton*/
+    color:aliceblue ;                       /*cambiamos el color de la letra*/
+    border: none;                             /*hacemos que el boton no presente bordes*/
+    border-bottom: 4px solid #ab400e;       /*agregamos un borde al boton con un tamano y color definido*/
+    font-size: 16px;                           /*cambiar el tamano de letra al contenido*/
+
+}
+.contenedor .siguiente .btnsiguiente:active{
+    background-color: black;                /*Cambiamos el color de fondo del boton*/
+    border-bottom: 4px solid gray;          /*agregamos un borde al boton con un tamano y color definido*/
+    width:195px;                              /*modificamos el ancho del boton*/
+    height: 35px;                             /*modificamos la altura del boton*/
+}
+
+.contenedor .libro1 a,
+.contenedor .libro2 a,
+.contenedor .arti1 a,
+.contenedor .arti2 a,
+.contenedor .tesis1 a,
+.contenedor .tesis2 a{
+    text-decoration: none;             /*le quitamos el formato por defecto que tiene todo hipervinculo*/
+    color: black;                   /*cambiamos el color de la letra*/
+}
+.contenedor a:hover{
+    color: darkorange;              /*cambiamos el color de la letra*/
+}
+.contenedor .opciones img:hover{        /*cuando se acerque el mouse al contenedor indicada sucedera la siguiente accion*/
+    width: 175px;                       /*Cambiamos el ancho de la imagen que se encuentra dentro del contenedor de opcicones*/
+    height:155px;                       /*Cambiamos la altura de la imagen que se encuentra dentro del contenedor de opciones*/
+}
+.contenedor .vacio{
+    background-color:transparent ;      /* le decimos que el color de fondo del contenedor sea tranasparente*/
+    grid-area: vacio;                   /*le indicamos a la division a que zona de la cuadricula pertenecera*/
+}

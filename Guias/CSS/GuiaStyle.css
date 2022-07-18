@@ -1,0 +1,197 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    color:black;
+}
+
+.contenedor{
+    width:100%;
+    max-width: 1300px;
+    margin: 20px auto 100px auto;
+    font-size: 18px;
+    font-family: Arial;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(11, auto);
+    row-gap: 20px;
+
+    grid-template-areas: "imagenes imagenes imagenes"
+                         "subtitulo1 subtitulo1 subtitulo1"
+                         "imgGuia1 guia1 guia1"
+                         "imgGuia1 btnGuia1V btnGuia1D"
+                         "imgGuia2 guia2 guia2"
+                         "imgGuia2 btnGuia2V btnGuia2D"
+                         "imgGuia3 guia3 guia3"
+                         "imgGuia3 btnGuia3V btnGuia3D"
+                         "imgGuia4 guia4 guia4"
+                         "imgGuia4 btnGuia4V btnGuia4D"
+                         "visual visual visual";
+}
+
+.contenedor>div,
+.contenedor .imagenes,
+.contenedor .subtitulo1,
+.contenedor .imgGuia1,
+.contenedor .guia1,
+.contenedor .btnGuia1V,
+.contenedor .btnGuia1D,
+.contenedor .imgGuia2,
+.contenedor .guia2,
+.contenedor .btnGuia2,
+.contenedor .imgGuia3,
+.contenedor .guia3,
+.contenedor .btnGuia3,
+.contenedor .imgGuia4,
+.contenedor .guia4,
+.contenedor .btnGuia4,
+.contenedor .visual{
+    background: white;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.contenedor .imagenes{
+    background: rgb(245, 147, 28);
+    grid-area: imagenes;
+}
+.contenedor .imagenes .logo{
+    width: 100%;
+    height: 600px;
+}
+
+.contenedor .subtitulo1{
+    background: rgb(245, 147, 28);
+    color: white;
+    grid-area: subtitulo1;
+}
+
+.contenedor .imgGuia1 .guia,
+.contenedor .imgGuia2 .guia,
+.contenedor .imgGuia3 .guia,
+.contenedor .imgGuia4 .guia{
+    margin-left: 20px;
+    width: 120px;
+    height: 160px;
+
+}
+.contenedor .imgGuia1{
+    width: 150px;
+    margin-left: 100px;
+    grid-area: imgGuia1;
+}
+.contenedor .imgGuia2{
+    width: 150px;
+    margin-left: 100px;
+    grid-area: imgGuia2;
+}
+.contenedor .imgGuia3{
+    width: 150px;
+    margin-left: 100px;
+    grid-area: imgGuia3;
+}
+.contenedor .imgGuia4{
+    width: 150px;
+    margin-left: 100px;
+    grid-area: imgGuia4;
+}
+
+.contenedor .guia1,
+.contenedor .guia2,
+.contenedor .guia3,
+.contenedor .guia4{
+    margin: 20px 100px 0 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.contenedor .guia1{
+    grid-area: guia1;
+}
+.contenedor .guia2{
+    grid-area: guia2;
+}
+.contenedor .guia3{
+    grid-area: guia3;
+}
+.contenedor .guia4{
+    grid-area: guia4;
+}
+
+.contenedor .btnGuia1V{
+    background-color:transparent;
+    grid-area: btnGuia1V;
+}
+.contenedor .btnGuia1D{
+    background-color:transparent;
+    grid-area: btnGuia1D;
+}
+.contenedor .btnGuia2V{
+    background-color:transparent;
+    grid-area: btnGuia2V;
+}
+.contenedor .btnGuia2D{
+    background-color:transparent;
+    grid-area: btnGuia2D;
+}
+.contenedor .btnGuia3V{
+    background-color:transparent;
+    grid-area: btnGuia3V;
+}
+.contenedor .btnGuia3D{
+    background-color:transparent;
+    grid-area: btnGuia3D;
+}
+.contenedor .btnGuia4V{
+    background-color:transparent;
+    grid-area: btnGuia4V;
+}
+.contenedor .btnGuia4D{
+    background-color:transparent;
+    grid-area: btnGuia4D;
+}
+
+input{
+    width: 200px;
+    height: 40px;
+    border-radius: 40px;
+    background-color:#d85b21;
+    color:aliceblue ;
+    border: none;
+    border-bottom: 4px solid #ab400e;
+    font-family: "Comic Sans MS";
+    font-size: 16px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+
+
+}
+input:active{
+    background-color: black;
+    border-bottom: 4px solid gray;
+    width:195px;
+    height: 35px;
+}
+
+input:hover{
+    cursor:pointer;
+}
+
+.contenedor .visual{
+    grid-area: visual;
+}
+.contenedor .visual .iframe{
+    width: 100%;
+    height:600px;
+    border: none;
+}
+
+.footer{
+    background-color: #12203e;
+    color: white;
+    padding: 20px;
+}

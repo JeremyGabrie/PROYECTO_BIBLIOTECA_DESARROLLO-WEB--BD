@@ -1,0 +1,223 @@
+html{
+	box-sizing: border-box;
+	font-size:62.5%;
+}
+body{
+    margin: 0 0 0 0;
+}
+a {
+    text-decoration: none;
+    color:white;
+    cursor:pointer;
+}
+/*CAJITA PRIMARIA*/
+.Caja{
+	background-color: orange;
+    padding: 0.2rem;
+	color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.Caja__Flex,.Caja__contentido{
+	display:flex;
+}
+.Caja__contentido img,.Caja__Login img{
+    width: 2.2rem;
+    height: 2.2rem;
+    margin-top: 0.5rem;
+	margin-right: 0.3rem;
+	margin-left: 1rem;
+}
+.Caja__contentido p{
+	margin-top: 0.5rem;
+	margin-right: 0.3rem;
+	margin-bottom:1rem;
+    font-size: 1.6rem;
+}
+@media (max-width:700px) {
+    .Caja__Flex{
+        display: none;
+    }
+    .Caja{
+       justify-content: center;
+    }
+}
+.Caja__Login{
+    background-color:  orange;
+    font-size: 16px;
+	color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.Caja__Login, .Caja__Login ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.Caja__Login li p,.Caja__Login li a {
+    padding: 8px;
+    background-color:  orange;
+    display: block;
+    min-width: 100px;
+}
+
+.Caja__Login li p{
+    margin: 0px;
+}
+.Caja__Login li a:hover {
+    background-color: black;
+}
+.Login{
+    text-align: right;
+    cursor:pointer;
+}
+.Caja__Login>li {
+    float: left;
+}
+.Caja__Login li ul {
+    display: none;
+    position: absolute;
+    min-width: 100px;
+}
+.Caja__Login li:hover>ul {
+    display: block
+}
+/*IMAGEN PRINCIPAL*/
+.header__img{
+    text-align: center;
+}
+.logo {
+    height: 20rem;
+    width: 40rem;
+    margin-top: 0rem;
+    margin-bottom: 1.5rem;
+}
+/*NAVEGACIÓN*/
+.Navegacion__OP{
+    background-color:  orange;
+    font-size: 1.5rem;
+	color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.Navegacion__OP, .Navegacion__OP ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.Navegacion__OP li a {
+    padding: 1rem;
+    background-color:  orange;
+    display: block;
+}
+.Navegacion__OP li a:hover {
+    background-color: black;
+}
+.Navegacion__OP>li {
+    float: left;
+}
+.Navegacion__OP li ul {
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+.Navegacion__OP li:hover>ul {
+    display: block
+}
+/*IMAGENES*/
+.Inicio__nav{
+    margin-left: 7rem;
+}
+.Fin__nav{
+    margin-right: 7rem;
+}
+.cambio{
+    padding: 5px;
+}
+.botones{
+    font-size:30px;
+    width:50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius:50px;
+    background-color: rgba(0,0,0,.7);
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    color:#fff;
+    margin-top:100px;
+    box-shadow: 0 0 10px rgba(255,255,255,.6);
+    -webkit-transition: all .3s ease;
+    -o-transition:  all .3s ease;
+    transition:  all .3s ease;
+}
+.Contenedor_Imagen{
+    position: relative;
+}
+#imagen{
+    width: 100%;
+    height: 500px;
+}
+.botones:hover{
+    cursor:pointer;
+    transform:scale(1.2,1.2);
+}
+.atras{
+    left:2%;
+    margin-top: 210px;
+    top:calc(50%-70px);
+}
+.adelante{
+    right: 2%;
+    margin-top: 210px;
+    top:calc(50%-70px);
+}
+.Nombre{
+    text-align: center;
+    color: white;
+    position: absolute;
+    border-radius: 10px;
+    font-size: 70px;
+    margin-top: 180px;
+    padding: 10px;
+    background-color: rgba(0,0,0,.50);
+}
+/*FOOTER*/
+.footer__contenedor,.footer__redes__contenido{
+  color:white;
+  background-color: rgb(43, 43, 43);
+  display: grid;
+  grid-column-gap: 5px;
+  grid-template-columns: 30% auto auto;
+  font-size: 20px;
+}
+.footer__contenedor h4{
+    font-size: 20px;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+}
+.footer__contactos span{
+    color:rgb(255, 153, 19);
+}
+.footer__ubicanos{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.footer__contactos__contenido{
+    margin:0px 40px 0px 40px;
+}
+.footer__redes__contenido{
+    margin: 50px 40px 40px 40px;
+    text-align: center;
+    font-size: 15px;
+}
+@media (max-width:1050px) {
+    .footer__redes__contenedor{
+        text-align: center;
+    }
+    .footer__redes__contenido{
+       display: inline-block;
+       margin:0px auto 0px auto;
+    }
+}

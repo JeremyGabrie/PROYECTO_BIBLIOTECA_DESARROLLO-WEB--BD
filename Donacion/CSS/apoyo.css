@@ -1,0 +1,145 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    color:black;
+}
+
+
+/*CUERPO DE LA PÁGINA*/
+.contenedor{
+    margin: 20px 100px 0px 200px;
+    display: grid;
+    row-gap: 20px;
+    column-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, auto);
+
+    grid-template-areas: "imagenes imagenes imagenes imagenes"
+                         "informacion titulo titulo vacio"
+                         "informacion formulario formulario formulario"
+                         "vacio1 vacio1 donar vacio2";
+}
+
+.contenedor>div,
+.contenedor .imagenes,
+.contenedor .informacion,
+.contenedor .formulario,
+.contenedor .donar,
+.contenedor .vacio,
+.contenedor .vacio1,
+.contenedor .vacio2{
+    background: white;
+    padding:10px;
+    border-radius: 4px;
+}
+
+.contenedor .imagenes{
+    background: orange;
+    height: 1px;
+    grid-area: imagenes;
+}
+.contenedor .titulo{
+    height: 15px;
+    width: 400px;
+    background: orange;
+    color: white;
+    text-align: left;
+    align-items: center;
+    justify-content: left;
+    font-family: Arial;
+    font-size: 18px;
+    grid-area: titulo;
+    display: flex;
+}
+.contenedor .informacion{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 290px;
+    grid-area: informacion;
+}
+.contenedor .informacion h2{
+    font-family: "Arial Rounded MT Bold";
+    font-size: 30px;
+}
+
+.contenedor .informacion p{
+    font-family: Arial;
+    font-size: 18px;
+    margin-top: 50px;
+}
+.contenedor .informacion img{
+    width: 300px;
+    height:200px;
+    margin-top: 40px;
+}
+.contenedor .formulario{
+    background: #fcfaf7;
+    font-size: 20px;
+    font-family: Arial;
+    grid-area: formulario;
+}
+.contenedor .formulario .nombre,
+.contenedor .formulario .direccion,
+.contenedor .formulario .telefono,
+.contenedor .formulario .tipo,
+.contenedor .formulario .cantidad,
+.contenedor .formulario .condicion,
+.contenedor .formulario .archivo,
+.contenedor .formulario .distrito{
+        display: block;
+        width: 600px;
+        height: 25px;
+        margin: 5px 10px 5px 0px;
+        font-size: 15px;
+        outline: none;
+        border-radius: 10px;
+        background: transparent;
+	    font-family: 'Krub', sans-serif;
+        color: black;
+}
+.contenedor .formulario .condicion{
+    height: 100px;
+}
+.contenedor .donar{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    grid-area: donar;
+}
+.contenedor .donar .btndonar{
+    width: 200px;
+    height: 40px;
+    border-radius: 40px;
+    background-color:#d85b21;
+    color:aliceblue ;
+    border: none;
+    border-bottom: 4px solid #ab400e;
+    font-size: 16px;
+
+}
+.contenedor .donar .btndonar:active{
+    background-color: black;
+    border-bottom: 4px solid gray;
+    width:195px;
+    height: 35px;
+}
+
+.contenedor .donar .btndonar:hover{
+    cursor:pointer;
+}
+.contenedor .vacio{
+    background-color: transparent;
+    grid-area: vacio;
+}
+.contenedor .vacio1{
+    background-color: transparent;
+    grid-area: vacio1;
+}
+.contenedor .vacio2{
+    background-color: transparent;
+    grid-area: vacio2;
+}

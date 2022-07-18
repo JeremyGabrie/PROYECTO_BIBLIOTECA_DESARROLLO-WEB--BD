@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor{
+    width: 100%;
+    max-width: 1300px;
+    margin: 20px auto 100px auto;
+    font-size: 18px;
+    font-family: Arial;
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: repeat(8,auto);
+    row-gap: 20px;
+    column-gap: 20px;
+    grid-template-areas: "imagenes imagenes"
+                         "separador separador"
+                         "Titulo Titulo"
+                         "subtitulo1 subtitulo1"
+                         "imgDon datosDon"
+                         "subtitulo2 subtitulo2"
+                         "imgLibro datosMaterial"
+                         "confirmar confirmar";
+}
+
+.contenedor>div,
+.contenedor .imagenes,
+.contenedor .separador,
+.contenedor .Titulo,
+.contenedor .subtitulo1,
+.contenedor .imgDon,
+.contenedor .datosDon,
+.contenedor .subtitulo2,
+.contenedor .imgLibro,
+.contenedor .datosMaterial,
+.contenedor .confirmar{
+    background: white;
+    padding: 10px;
+    border-radius: 4px;
+    font-family: "Malgun Gothic Semilight";
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.contenedor .imagenes{
+    background:  rgb(245, 147, 28);
+    color: white;
+    grid-area: imagenes;
+}
+
+.contenedor .separador{
+    background:  rgb(245, 147, 28);
+    color: white;
+    grid-area: separador;
+}
+
+.contenedor .Titulo{
+    font-family: "Copperplate Gothic Light";
+    font-size: 27px;
+    text-align: center;
+    grid-area: Titulo;
+}
+.contenedor .Titulo .rayita{
+    width: 50%;
+    size: 10px;
+    display: inline-block;
+    color: darkblue;
+}
+
+.contenedor .subtitulo1{
+    background: rgb(245, 147, 28);
+    color: white;
+    grid-area: subtitulo1;
+    grid-area: subtitulo1;
+}
+.contenedor .imgDon{
+    width: 270px;
+    border-radius: 90%;
+    text-align: center;
+    grid-area: imgDon;
+}
+.img{
+    width: 260px;
+    height: 250px;
+    border-radius: 100%;
+}
+.contenedor .datosDon{
+
+    width: 900px;
+    grid-area:datosDon;
+}
+
+.contenedor .subtitulo2{
+    background: rgb(245, 147, 28);
+    color: white;
+    grid-area: subtitulo1;
+    grid-area: subtitulo2;
+}
+.contenedor .imgLibro{
+    width: 270px;
+    border-radius: 90%;
+    text-align: center;
+    grid-area: imgLibro;
+}
+.contenedor .datosMaterial{
+    width: 900px;
+    grid-area: datosMaterial;
+}
+.contenedor .confirmar{
+    text-align: center;
+    grid-area: confirmar;
+}
+.contenedor .confirmar .boton{
+    width: 200px;
+    height: 40px;
+    border-radius: 40px;
+    justify-content: center;
+    text-align: center;
+    background-color:#d85b21;
+    color:aliceblue ;
+    border: none;
+    border-bottom: 4px solid #ab400e;
+    font-size: 16px;
+}
+.contenedor .confirmar .boton:active{
+    background-color: black;
+    border-bottom: 4px solid gray;
+    width:195px;
+    height: 35px;
+}
+.contenedor .confirmar .boton:hover{
+    cursor: pointer;
+}
+.contenedor th{
+    font-family: "Arial";
+    font-size: 19px;
+    text-align: left;
+    background-color: #fceee6;
+    color: black;
+    padding:10px;
+    border: 2px solid #ab400e;
+}
+.contenedor td{
+    border: 2px solid #ab400e;
+}
+

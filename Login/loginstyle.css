@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+    background-image: url(img/fondo2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.container_form{
+    background-color: rgba(0,0,0,.70);
+    border-radius: 15px;
+    padding: 40px;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+    margin-left: 130px;
+}
+
+h2{
+    text-align: center;
+    color: white;
+}
+
+
+input{
+    display: block;
+    width: 300px;
+    height: 40px;
+    margin-bottom: 20px;
+    margin-left: 22px;
+    padding: 0px 15px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    background: transparent;
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.Cambio{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin-left: 60px;
+}
+
+.boton{
+    width: 150px;
+    border-radius: 15px;
+    background-color:#d85b21;
+    color:aliceblue ;
+    margin-top: 30px;
+    border: none;
+    border-bottom: 4px solid #ab400e;
+    cursor:pointer;
+}
+
+.Cambio:hover{
+    color: #b8b8b8;
+}
+
+.boton:active{
+    background-color: #ab400e;
+    width:145px;
+}
+
+.ContenedorBotones{
+    display:Flex;
+    justify-content: space-evenly;
+}
+.ContenedorBotones a{
+    color: white;
+    text-decoration: none;
+}

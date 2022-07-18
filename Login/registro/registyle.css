@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+    background-image: url(imgRegistro/fondo2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.container_form{
+    background-color: rgba(0,0,0,.70);
+    border-radius: 15px;
+    padding: 40px;
+}
+
+h2{
+    text-align: center;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+input{
+    display: block;
+    width: 300px;
+    height: 40px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    padding: 0px 15px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    background: transparent;
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.texto{
+    margin-left: 150px;
+}
+
+
+.boton{
+    width: 120px;
+    display: initial;
+    border-radius: 15px;
+    background-color:#d85b21;
+    color:white ;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 4px solid #ab400e;
+    font-size: 15px;
+}
+
+.boton2{
+    width: 120px;
+    border-radius: 15px;
+    background-color:#d85b21;
+    color:aliceblue ;
+    margin-top: 70px;
+    margin-left: 245px;
+    border: none;
+    border-bottom: 4px solid #ab400e;
+    font-size: 15px;
+}
+
+.boton:active{
+    background-color: #ab400e;
+    width:115px;
+}
+
+.boton2:active{
+    background-color: #ab400e;
+    width:115px;
+}
